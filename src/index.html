@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Outfit&display=swap" rel="stylesheet">
+    <title>Starship War</title>
+    <style>
+        .text-effect{
+            text-shadow:
+      0 0 21px #EC9F05,
+      0 0 82px #FF4E00;
+      
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-black h-screen" id="home">
+        <nav class="flex w-full text-xl justify-between p-5">
+            <div class="text-white uppercase hover:text-red-600 cursor-pointer">Eliel P.F.</div>
+            <ul class="text-white flex gap-5 uppercase">
+                <li class="transition ease-in-out hover:-translate-y-1 hover:text-red-600">
+                    <a href="#home" class="">home</a>
+                </li>
+                <li class="transition ease-in-out hover:-translate-y-1 hover:text-red-600">
+                    <a href="#projects">projects</a>
+                </li>
+                <li class="transition ease-in-out hover:-translate-y-1 hover:text-red-600">
+                    <a href="#about">about me</a>
+                </li>
+                <li class="transition ease-in-out hover:-translate-y-1 hover:text-red-600">
+                    <a href="#contacts">contacts</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="p-20">
+            <h1 class="text-white text-7xl">
+                <!-- text-transparent  bg-clip-text bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -->
+               <span class="text-transparent hidden bg-clip-text bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] text-9xl text-effect">Welcome</span>  <br>
+               <br>
+                I'm Eliel. <br>
+                I'm a web developer. 
+            </h1>
+           
+        </div>
+
+
+    </header>
+
+
+    <section id="projects" class="h-screen bg-black bg-cover relative">
+        <div class="w-full h-full hidden items-center justify-center text-center mobile-warning">
+            <h1 class="uppercase text-white text-5xl ">rotate your phone</h1>
+        </div>
+        <div class="game flex-col h-full justify-end bg-transparent flex"> 
+            
+            <div class="flex items-end justify-end gap-5 p-5 absolute top-0.5 right-0">
+                <p class="text-white text-2xl font-BungeeSpice" id="points">0</p>
+                <p class="text-white text-2xl font-BungeeSpice">
+                    <span id="minutes">00</span>:<span id="seconds">00</span>
+                </p>
+            </div>
+            <div class="shoots  h-full w-full relative bg-transparent">
+                <div id="enemy" class="w-10 h-10  absolute transition m-auto hidden z-10">
+                    <img src="./assets/aircraft.svg">
+                </div>
+                <div id="shoot" class="w-0.5 h-4 border-solid border border-white mx-auto absolute transition hidden z-10"></div>
+            </div>
+            <div id="spaceship" class="w-10 h-10 my-5 ml-0 transition relative">
+                <img src="./assets/spaceship.svg" class="w-10 h-10">
+            </div>
+            <div class="absolute  w-full bg-transparent hidden gap-6 bottom-6 btn-mobile align-middle justify-between btn-up-move items-center">
+                <div class="ml-5 flex items-center rounded-full justify-center relative border-2 border-white w-24 h-24 ">
+                    <div class=" border-2 rounded-full border-white w-16 h-16 absolute btn-move"></div>
+                </div>
+                
+                <button class="w-20 h-20 border-2 border-white rounded-full mr-5 attack">
+                </button>
+            </div>
+            <div class="absolute font-BungeeSpice text-6xl top-1/3 w-full text-center start">
+                Press "S" to Start!
+            </div>
+        </div>
+        
+    </section>
+    <section id="contacts" class="md:h-screen bg-[#383838] md:flex justify-center items-center ">
+        <div class="relative mt-12 w-64 h-64 ml-12">
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-1 -right-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-2 -right-2 absolute"></div>
+            <div class="z-20 w-64 h-64 bg-black absolute">
+                <div class="relative w-full h-full  flex justify-center items-center">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] absolute">
+                    <a href="#" class="text-white text-2xl absolute bottom-7">@eliel.wolf</a>
+                </div>
+            </div>
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-1 -left-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-2 -left-2 absolute"></div>
+        </div>
+        <div class="relative mt-12 w-64 h-64 ml-12">
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-1 -right-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-2 -right-2 absolute"></div>
+            <div class="z-20 w-64 h-64 bg-black absolute">
+                <div class="relative w-full h-full  flex justify-center items-center">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] absolute">
+                    <a href="#" class="text-white text-2xl absolute bottom-7">@eliel.wolf</a>
+                </div>
+            </div>
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-1 -left-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-2 -left-2 absolute"></div>
+        </div>
+        <div class="relative mt-12 w-64 h-64 ml-12">
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-1 -right-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-2 -right-2 absolute"></div>
+            <div class="z-20 w-64 h-64 bg-black absolute">
+                <div class="relative w-full h-full  flex justify-center items-center">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] absolute">
+                    <a href="#" class="text-white text-2xl absolute bottom-7">@eliel.wolf</a>
+                </div>
+            </div>
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-1 -left-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-2 -left-2 absolute"></div>
+        </div>
+        <div class="relative mt-12 w-64 h-64 ml-12">
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-1 -right-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -top-2 -right-2 absolute"></div>
+            <div class="z-20 w-64 h-64 bg-black absolute">
+                <div class="relative w-full h-full  flex justify-center items-center">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] blur-2xl absolute">
+                    <img src="./assets/icons8-github.svg" class="w-20 h-20 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] absolute">
+                    <a href="#" class="text-white text-2xl absolute bottom-7">@eliel.wolf</a>
+                </div>
+            </div>
+            <div class="z-10 w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-1 -left-1 absolute"></div>
+            <div class="z-10 blur-2xl w-32 h-32 bg-gradient-to-r from-[#EC9F05] to-[#FF4E00] -bottom-2 -left-2 absolute"></div>
+        </div>
+    </section>
+    
+    <script src="./js/game.js"></script>
+</body>
+</html>
